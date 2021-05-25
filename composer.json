@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/userpilot-dashboard",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "a.rayyan",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}

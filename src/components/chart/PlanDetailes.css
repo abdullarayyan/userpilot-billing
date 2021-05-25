@@ -1,0 +1,63 @@
+.wrapper-content{
+    /*padding: 12px 20px;*/
+    /*margin: 8px 0;*/
+    /*border: 1px solid #b6bcc6;*/
+    /*border-radius: 4px;*/
+    /*box-sizing: border-box;*/
+    /*background-color: #ffffff;*/
+    /*font-size: 13px;*/
+    /*font-weight: bold;*/
+    /*color: #585d5d;*/
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.plan{
+    width: 55%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #b6bcc6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    color: #585d5d;
+
+}
+.box{
+    width: 40%;
+    position: relative;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #b6bcc6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    color: #585d5d;
+    align-items: center;
+}
+
+p#plan{
+    position: center;
+    font-size: 19px;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box,h1#plan{
+    position: center;
+    font-size: 19px;
+    justify-content: center;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+

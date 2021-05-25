@@ -1,0 +1,46 @@
+.down__card{
+    background-color: #f9f9f9;
+    position: relative;
+    overflow-y: auto;
+    padding: 24px 32px;
+    flex: 1 1 auto;
+    border: 1px solid #e5e8eb;
+
+}
+.down__card2{
+    background-color: #ffffff;
+    position: relative;
+    overflow-y: auto;
+    padding: 24px 32px;
+    flex: 1 1 auto;
+    border-radius: 1px ;
+    border: 1px solid #e5e8eb;
+}
+#h-1{
+    color: #4a4f58;
+    font-size: 20px;
+}
+#h-2{
+    color: #00d97b;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#h-3{
+    color: #4a4f58;
+    font-size: 18px;
+    font-weight: 500;
+}
+#h-4{
+    color: #4a4f58;
+    font-size: 20px;
+    font-weight: revert;
+
+    margin-top: 15px;
+}
+
+#p-1{
+    margin-left: 0px;
+    margin-top: 5px;
+    color: #adb4bf;
+}
