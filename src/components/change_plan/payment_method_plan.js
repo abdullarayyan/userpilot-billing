@@ -5,16 +5,16 @@ import img from "../../assets/Untitled1111.png";
 import flight from "../../assets/flight_icon.png";
 import hint from "../../assets/hint.png"
 import close from "../../assets/clos.png"
-import interprise from "../../assets/interprise_icon.png"
+import enterprise from "../../assets/interprise_icon.png"
 import "./free_plan.css"
 import Horizontal from "../sub_component/RangeSlider";
-import Downgrade from "./downgrade";
+import Downgrade_plan from "./downgrade_plan";
 
 
 const AddPlan = ({data}) => {
     const [state, setState] = useState({
-        isPaneOpen: true,
-        isPaneOpenLeft: true,
+        isPaneOpen: false,
+        isPaneOpenLeft: false,
     });
     
     const initial_price = 390;
@@ -24,7 +24,7 @@ const AddPlan = ({data}) => {
         if (ToPay === "monthly") {
             setPrice(initial_price)
         } else if (ToPay === "yearly") {
-            setPrice(price - price * (15 / 100))
+            setPrice(initial_price - (initial_price * (15 / 100)))
         }
     }
     
@@ -80,12 +80,12 @@ const AddPlan = ({data}) => {
                                 <div className="switches-container">
                                     <input type="radio" id="switchMonthly" name="switchPlan" value="Monthly"
                                            checked="checked"
-                                        
+                                    
                                     />
                                     <input type="radio" id="switchYearly" name="switchPlan" value="Yearly"
                                     
                                     />
-                                    <label htmlFor="switchMonthly"    onClick={() => {
+                                    <label htmlFor="switchMonthly" onClick={() => {
                                         onclick("monthly")
                                     }}>Monthly</label>
                                     <label htmlFor="switchYearly"
@@ -127,7 +127,7 @@ const AddPlan = ({data}) => {
                                         <div className={"element"}>
                                             <img id={"img"} src={flight} alt="logo"/>
                                             <h1 id={"h_1"}>Standard</h1>
-                                            <h1 id={"h_2"}>{price}</h1>
+                                            <h1 id={"h_2"}>${price}</h1>
                                             <h1 id={"h_3"}>per month</h1>
                                             <button id={"btn__a"} type={"submit"}>Buy Now</button>
                                             <div className={"list"}>
@@ -142,7 +142,7 @@ const AddPlan = ({data}) => {
                                     </div>
                                     <div className={"card__b"}>
                                         <div className={"element"}>
-                                            <img id={"img"} src={interprise} alt="logo"/>
+                                            <img id={"img"} src={enterprise} alt="logo"/>
                                             <h1 id={"h_1"}>Enterprise</h1>
                                             <h1 id={"h__2"}>Reach out for pricing</h1>
                                             <h1 id={"h__3"}>Let’s talk</h1>
@@ -184,7 +184,7 @@ const AddPlan = ({data}) => {
                                     </div>
                                     <div className={"card__b"}>
                                         <div className={"element"}>
-                                            <img id={"img"} src={interprise} alt="logo"/>
+                                            <img id={"img"} src={enterprise} alt="logo"/>
                                             <h1 id={"h_1"}>Enterprise</h1>
                                             <h1 id={"h__2"}>Reach out for pricing</h1>
                                             <h1 id={"h__3"}>Let’s talk</h1>
@@ -225,7 +225,7 @@ const AddPlan = ({data}) => {
                                     </div>
                                     <div className={"card__b"}>
                                         <div className={"element"}>
-                                            <img id={"img"} src={interprise} alt="logo"/>
+                                            <img id={"img"} src={enterprise} alt="logo"/>
                                             <h1 id={"h_1"}>Enterprise</h1>
                                             <h1 id={"h__2"}>Reach out for pricing</h1>
                                             <h1 id={"h__3"}>Let’s talk</h1>
@@ -255,8 +255,8 @@ const AddPlan = ({data}) => {
                                             <h1 id={"h_1"}>Standard</h1>
                                             <h1 id={"h_2"}>$399</h1>
                                             <h1 id={"h_3"}>per month</h1>
-                                            {/*<button id={"btn__a_d"} type={"submit"}>Downgrade</button>*/}
-                                            <Downgrade/>
+                                            {/*<button id={"btn__a_d"} type={"submit"}>Downgrade_plan</button>*/}
+                                            <Downgrade_plan/>
                                             <div className={"list"}>
                                                 <li>People & Tracking</li>
                                                 <li>Growth Insight</li>
@@ -269,7 +269,7 @@ const AddPlan = ({data}) => {
                                     </div>
                                     <div className={"card__b"}>
                                         <div className={"element"}>
-                                            <img id={"img"} src={interprise} alt="logo"/>
+                                            <img id={"img"} src={enterprise} alt="logo"/>
                                             <h1 id={"h_1"}>Enterprise</h1>
                                             <h1 id={"h__2"}>Reach out for pricing</h1>
                                             <h1 id={"h__3"}>Let’s talk</h1>
@@ -312,7 +312,7 @@ const AddPlan = ({data}) => {
                                     </div>
                                     <div className={"card__b"}>
                                         <div className={"element"}>
-                                            <img id={"img"} src={interprise} alt="logo"/>
+                                            <img id={"img"} src={enterprise} alt="logo"/>
                                             <h1 id={"h_1"}>Enterprise</h1>
                                             <h1 id={"h__2"}>Reach out for pricing</h1>
                                             <h1 id={"h__3"}>Let’s talk</h1>

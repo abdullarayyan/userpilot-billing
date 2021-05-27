@@ -6,7 +6,7 @@ import close from "../../assets/clos.png";
 import "./free_plan.css"
 import "./downdrade.css"
 
-const Downgrade = () => {
+const Downgrade_plan = () => {
     const [state, setState] = useState({
         isPaneOpen: false,
         isPaneOpenLeft: false,
@@ -15,11 +15,11 @@ const Downgrade = () => {
     return (
         <div>
             <button id="btn__a_d" onClick={() => setState({isPaneOpenLeft: true})}>
-                Downgrade
+                Downgrade_plan
             </button>
             <SlidingPane
                 isOpen={state.isPaneOpenLeft}
-                title="Downgrade your plan"
+                title="Downgrade_plan your plan"
                 from="right"
                 width="500px"
                 onRequestClose={() => setState({isPaneOpenLeft: false})}
@@ -65,4 +65,4 @@ const Downgrade = () => {
     );
     
 }
-export default Downgrade
+export default Downgrade_plan

@@ -1,28 +1,37 @@
-// import React, {useMemo} from 'react'
+import React from "react";
 import Select, {components} from 'react-select'
 import { useEffect, useMemo } from "react"
+import makeAnimated from "react-select/animated";
 
-const Select_op = ({option}) => {
+
+
+const animatedComponents = makeAnimated();
+
+const Select_option = ({option}) => {
     
-    const data = useMemo(()=>{
-        console.log({option})
+    const selectEmail = useMemo(()=>{
+        console.log(option,'podkf')
         if (option&&option.organization && option.organization.billing_contacts){
             return option.organization.billing_contacts.map(email=>({
-                lable:email,
+                label:email,
                 value:email,
             }))
         }
         return []
         
     },[option])
-    // console.log(option+'kdkdkd')
+    console.log(selectEmail,"Emails")
+
     return (
         
             <Select
                 isMulti
-                options={data}
+                closeMenuOnSelect={false}
+                options={selectEmail}
+                components={animatedComponents}
+                // onChange={}
             />
         
     )
 }
-export default Select_op
+export default Select_option

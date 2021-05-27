@@ -8,6 +8,7 @@ import hint from "../../assets/hint.png"
 import close from "../../assets/clos.png";
 
 const AddPayment = () => {
+    
     const [state, setState] = useState({
         isPaneOpen: false,
         isPaneOpenLeft: false,

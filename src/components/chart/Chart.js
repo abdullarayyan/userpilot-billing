@@ -6,82 +6,11 @@ export default class charts extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            
+            seriesRadial: [this.props.parcentage * 100],
             optionsRadial: {
                 plotOptions: {
                     radialBar: {
-                        startAngle: 0,
-                        endAngle: 360,
-                        hollow: {
-                            margin: 0,
-                            size: "70%",
-                            background: "#fff",
-                            image: undefined,
-                            imageOffsetX: 0,
-                            imageOffsetY: 0,
-                            position: "front",
-                            dropShadow: {
-                                enabled: true,
-                                top: 1,
-                                left: 0,
-                                blur: 1,
-                                opacity: 0.100
-                            }
-                        },
-                        track: {
-                            background: "#fff",
-                            strokeWidth: "50%",
-                            margin: 0, // margin is in pixels
-                            dropShadow: {
-                                enabled: true,
-                                top: -3,
-                                left: 0,
-                                blur: 4,
-                                opacity: 0.35
-                            }
-                        },
-                        dataLabels: {
-                            showOn: "always",
-                            name: {
-                                offsetY: -10,
-                                show: true,
-                                color: "#acb5bd",
-                                fontSize: "16px"
-                            },
-                            value: {
-                                formatter: function(val) {
-                                    return val;
-                                },
-                                color: "#111",
-                                fontSize: "16px",
-                                show: true
-                            }
-                        }
-                    }
-                },
-                fill: {
-                    type: "gradient",
-                    gradient: {
-                        shade: "dark",
-                        type: "horizontal",
-                        shadeIntensity: 0.5,
-                        gradientToColors: ["#ABE5A1"],
-                        inverseColors: true,
-                        opacityFrom: 1,
-                        opacityTo: 1,
-                        stops: [0, 100]
-                    }
-                },
-                stroke: {
-                    lineCap: "round"
-                },
-                labels: ["%"]
-            },
-            seriesRadial: [this.props.parcentage *100],
-            
-            optionsRadial1: {
-                plotOptions: {
-                    radialBar: {
-                        // startAngle: 0,
                         endAngle: 360,
                         hollow: {
                             margin: 0,
@@ -99,55 +28,29 @@ export default class charts extends React.Component {
                                 opacity: 0.24
                             }
                         },
-                        track: {
-                            background: "#fff",
-                            strokeWidth: "37%",
-                            margin: 0, // margin is in pixels
-                            dropShadow: {
-                                enabled: true,
-                                top: -3,
-                                left: 0,
-                                blur: 4,
-                                opacity: 0.35
-                            }
-                        },
                         dataLabels: {
                             showOn: "always",
-                            name: {
-                                offsetY: 0,
-                                show: true,
-                                color: "#acb5bd",
-                                fontSize: "19px"
-                            },
-                            value: {
-                                formatter: function(val) {
-                                    return val;
-                                },
-                                color: "#acb5bd",
-                                fontSize: "19px",
-                                show: true
-                            }
                         }
                     }
                 },
                 fill: {
                     type: "gradient",
-                    colors: ["#FF00FF"],
+                    colors: ["#e23c7d"],
                     gradient: {
                         shade: "dark",
                         type: "horizontal",
                         shadeIntensity: 0.5,
-                        gradientToColors: ["#BA55D3", "#43467F"],
-                        inverseColors: true,
-                        opacityFrom: 1,
-                        opacityTo: 1,
-                        stops: [0, 100]
+                        gradientToColors: ["#5f00c2"],
+                        inverseColors: false,
+                        opacityFrom: [1],
+                        opacityTo: [1],
+                        stops: [0, 50 ]
                     }
                 },
                 stroke: {
                     lineCap: "round"
                 },
-                labels: ["%"]
+                labels: [""]
             }
         };
     }
@@ -155,7 +58,7 @@ export default class charts extends React.Component {
     render() {
         return (
             <Chart
-                options={this.state.optionsRadial1}
+                options={this.state.optionsRadial}
                 series={this.state.seriesRadial}
                 color="#43467F"
                 type="radialBar"

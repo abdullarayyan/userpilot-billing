@@ -155,7 +155,7 @@ main {
 }
 
 .card2 {
-    background: #d2f9ee;
+    background: #f2f7fa;
     color: #38e1b0;
     text-align: center;
     padding: 25px;
@@ -164,12 +164,13 @@ main {
 }
 
 .card3 {
+    /*margin-top: 10px;*/
     background: #f5f5f5;
     color: #3a3e41;
-    padding: 25px;
+    padding: 20px;
     border-radius: 5px;
     font-size: 14px;
-    margin-bottom: 22px;
+    /*margin-bottom: 22px;*/
     display: flex;
     flex-direction: column;
 }

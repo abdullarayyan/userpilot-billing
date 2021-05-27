@@ -1,0 +1,141 @@
+footer{
+background-color: #ffffff;
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 0 30px 0 30px;*/
+    border-top: 2px solid #dde2e6;
+
+}
+
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+footer a{
+    font-size: 19px;
+    font-style: unset;
+    font-palette: dark;
+    color: #ff0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 30px;
+    /*margin-top: 5px;*/
+    cursor: pointer;
+    /*background-color: #ffffff;*/
+}
+#link{
+
+}
+footer p{
+    color: #adb4bf;
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    /*margin-top: 10px;*/
+}
+
+
+#cared3{
+    background-color: white;
+
+}
+#card_3{
+    /*margin: 10px 10px 10px 10px;*/
+    /*margin-top: 10px;*/
+    background-color: #f2f7fa;
+    border-left: 10px solid #24709c;
+    border-radius: 10px;
+
+}
+
+#card_4{
+    /*margin: 10px 10px 10px 10px;*/
+    /*margin-top: 10px;*/
+    background-color:#f8f5ff;
+    border-left: 10px solid #5f00c2;
+    border-radius: 10px;
+
+}
+#p-11{
+    margin-left: 0px;
+    margin-top: 5px;
+    color: #4a4f58;
+}
+.content_card{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.content_card1{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    /*margin-bottom: 30px;*/
+}
+.content_card_t{
+    display: flex;
+    flex-direction: column;
+}
+#pc,#hc,#bc{
+    margin-left: 30px;
+
+}
+#hc{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #4a4f58;
+}
+
+#pc{
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#bc{
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #24709c;
+    height: 30px;
+
+}
+#bc1{
+    background-color: #00d97b;
+    margin-bottom: 10px;
+    color: #ffffff;
+    height: 30px;
+    margin-left: 30px;
+
+}
+.btn{
+
+}
+#btn--1{
+    border: 2px solid #adb4bf;
+    background-color: #f9f9f9;
+    margin-right: 10px;
+}
+#btn--2{
+    background-color: #fb0404;
+    width: 213px;
+    color: white;
+}
+
+.photo{
+    margin-top: 30px;
+
+}
+

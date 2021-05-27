@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Slider from 'react-rangeslider'
 import "./rangrSlider.css"
 import "../change_plan/free_plan.css"
-import AddP from "../change_plan/growth_engine";
+import AddP from "../change_plan/payment_method_plan";
 
 class Horizontal extends Component {
     constructor(props) {
@@ -11,6 +11,7 @@ class Horizontal extends Component {
             value: this.props.data.organization.plan_details.mua
         }
     }
+    
     
     handleChangeStart = () => {
         console.log('Change event started')
@@ -30,9 +31,10 @@ class Horizontal extends Component {
         console.log('Change event completed')
     };
     // componentDidMount() {}
-    render() {
+    render()
+    {
         const {value} = this.state
-        console.log(value+"ll")
+        console.log(value + "ll")
         return (
             <div>
                 <div className='slider' style={{width: '980px', backgroundColor: 'ff0075'}}>
@@ -52,6 +54,6 @@ class Horizontal extends Component {
             </div>
         )
     }
+    
 }
-
 export default Horizontal

@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {useFormik} from 'formik';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "./form_information.css"
-import Select_op from "../sub_component/select";
+import Select_option from "../sub_component/select";
 import img from "../../assets/Untitled1111.png";
 import visa from "../../assets/visa.png"
 import AddPayment from "../payment_method/AddPaymentMethode";
@@ -11,28 +11,41 @@ import UpdatePayment from "../payment_method/UpdatePaymentMethode";
 import FreePlan from "../plan_detailes/FreePlan";
 import StanderdPlan from "../plan_detailes/StanderdPlan";
 import InterprisePlan from "../plan_detailes/InterprisePlan";
+import * as Yup from 'yup';
 
-const SignupForm = ({data}) => {
+const SignupForm = ({data, selectEmail}) => {
     
     const free = React.useMemo(() => true, []);
-    const pre = (data.organization.plan_details.applications[0].production_usage) / 2000
+    
     
     const formik = useFormik({
         initialValues: {
-            name: '',
-            primary_contact: '',
+            name: data.organization.name,
+            primary_contact: data.organization.primary_contact,
             billing_contacts: '',
-            billing_address: '',
-            var_number: '',
+            billing_address: data.organization.billing_address,
+            var_number: data.organization.var_number,
             additional_information: '',
         },
-        initialValues1: {
-            name1: 'data.organization.name',
-        },
+        validationSchema: Yup.object({
+            name: Yup.string()
+                .max(22, 'Organization Name max is 22eg.')
+                .required('This field is required'),
+            primary_contact: Yup.string()
+                .max(22, 'Must be 20 characters or less')
+                .required('This field is required'),
+            billing_contacts: Yup.string().email('This field is required').required('This field is required'),
+            
+            billing_address: Yup.string()
+                .max(100, '')
+                .required('This field is required'),
+            var_number: Yup.string()
+                .max(22, '')
+                .required('This field is required')
+        }),
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));
         },
-        
     });
     return (
         <main>
@@ -49,23 +62,32 @@ const SignupForm = ({data}) => {
                                         name="name"
                                         type="text"
                                         onChange={formik.handleChange}
-                                        value={data.organization.name}
-                                    />
-                                    {formik.initialValues.name !== data.organization.name && (
-                                        <div>{"form.errors.firstName"}</div>
-                                    )}
-                                    <label htmlFor="primary_contact">Primary Organization Contact</label>
-                                    <input name="contact" id="contact"
+                                        value={formik.values.name}
+                                        // onBlur={formik.handleBlur}
+                                    />{formik.touched.name && formik.errors.name ? (
+                                    <p>{formik.errors.name}</p>
+                                ) : null}
+                                    
+                                    <label htmlFor="primary">Primary Organization Contact</label>
+                                    <input id="contact" name="contact" type="text"
                                            onChange={formik.handleChange}
-                                           value={data.organization.primary_contact}>
-                                    </input>
-                                    <label htmlFor="billing_contact">Billing Contact(s)</label>
-                                    <Select_op
-                                        name="billing_contact" id="billing_contact"
-                                        onChange={formik.handleChange}
-                                        option={data}
-                                        value={data.organization.billing_contacts}
+                                           value={formik.values.primary_contact}
                                     />
+                                    {formik.touched.primary_contact && formik.errors.primary_contact ? (
+                                        <p>{formik.errors.primary_contact}</p>
+                                    ) : null}
+                                    
+                                    <label htmlFor="billing_contact">Billing Contact(s)</label>
+                                    <Select_option option={data}
+
+                                                   onChange={formik.handleChange}
+                                                   value={formik.values.billing_contacts}
+                                    />
+                                    {formik.touched.billing_contacts && formik.errors.billing_contacts ? (
+                                        <p>{formik.errors.billing_contacts}</p>
+                                    ) : null}
+                                    
+                              
                                 </div>
                                 <div className="b">
                                     <label htmlFor="billing_address">Billing Address</label>
@@ -73,8 +95,11 @@ const SignupForm = ({data}) => {
                                               id="user_text"
                                               aria-multiline
                                               onChange={formik.handleChange}
-                                              value={data.organization.billing_address}>
+                                              value={formik.values.billing_address}>
                                         </textarea>
+                                    {formik.touched.billing_address && formik.errors.billing_address ? (
+                                        <p>{formik.errors.billing_address}</p>
+                                    ) : null}
                                 </div>
                                 <div className="c">
                                     <label htmlFor="var_number">VAT Number</label>
@@ -84,8 +109,11 @@ const SignupForm = ({data}) => {
                                         type="text"
                                         placeholder="123 456 789"
                                         onChange={formik.handleChange}
-                                        value={data.organization.var_number}
+                                        value={formik.values.var_number}
                                     />
+                                    {formik.touched.var_number && formik.errors.var_number ? (
+                                        <p>{formik.errors.var_number}</p>
+                                    ) : null}
                                     <label htmlFor="additional_information">Additional Information</label>
                                     <textarea
                                         id="additional_text"
@@ -97,12 +125,11 @@ const SignupForm = ({data}) => {
                                 </div>
                             </div>
                             <div className="submit">
-                                {formik.initialValues.name !== data.organization.name && (
-                                    <div>
-                                        <button type="submit" id="save">Save</button>
-
-                                    </div>
-                                )}
+                                <div>
+                                    <button type="submit" id="save">Save</button>
+                                </div>
+                               
+                            
                             </div>
                         </form>
                     
@@ -110,27 +137,27 @@ const SignupForm = ({data}) => {
                     
                     {data.organization.plan_details.plan_type === "trial" && (
                         <React.Fragment>
-                        <FreePlan data={data}/>
+                            <FreePlan data={data}/>
                         
                         </React.Fragment>
                     )}
                     
                     
-                    {data.organization.plan_details.plan_type === "" && (
+                    {data.organization.plan_details.plan_type === "standard" && (
                         <React.Fragment>
                             <StanderdPlan data={data}/>
                         </React.Fragment>
                     )}
                     
                     
-                    {data.organization.plan_details.plan_type === "" && (
+                    {data.organization.plan_details.plan_type === "enterprise" && (
                         <React.Fragment>
                             <InterprisePlan data={data}/>
                         </React.Fragment>
                     )}
                     
                     
-                    {data.organization.plan_details.plan_type && (
+                    {data.organization.plan_details.plan_type === "trial" && (
                         <React.Fragment>
                             <div className="main__greeting">
                                 <p>Current Payment Method</p>
@@ -153,7 +180,7 @@ const SignupForm = ({data}) => {
                     )}
                     
                     
-                    {data.organization.plan_details.plan_type && (
+                    {data.organization.plan_details.plan_type === "standard" && (
                         <div>
                             <div className="main__greeting">
                                 <p>Current Payment Method</p>
@@ -195,15 +222,16 @@ const SignupForm = ({data}) => {
                             
                             </div>
                             
-                            {data.organization.invoices.map(val => (
-                                <div key={val}>
+                            {data.organization.invoices.map(value => (
+                                <div key={value}>
                                     <div className={"box_invoice2"}>
                                         <table id={"table"}>
                                             <tr>
-                                                <th>{val.date_time}</th>
-                                                <th>{val.plan}</th>
-                                                <th>{val.amount}</th>
-                                                <th>{val.invoice_number}</th>
+                                                <th>{value.date_time}</th>
+                                                
+                                                <th>{value.plan}</th>
+                                                <th>{value.amount}</th>
+                                                <th>{value.invoice_number}</th>
                                             </tr>
                                             <div className={"data_table"}>
                                             

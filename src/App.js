@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import SignupForm from "./components/organiztion_info/form_information";
 import axios from "axios";
+import Footer from "./components/footer/footer";
 
 const App = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -36,7 +37,10 @@ const App = () => {
         <div className="container">
             <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
             <SignupForm data={api}/>
+        
             <Sidebar siebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
+            <Footer data={api}/>
+
         </div>
         </main>
     );
