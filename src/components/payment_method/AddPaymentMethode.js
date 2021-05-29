@@ -1,5 +1,4 @@
 import React, {Component, useState} from "react";
-import {render} from "react-dom";
 import SlidingPane from "react-sliding-pane"
 import "./payment_method.css"
 import img from "../../assets/Untitled1111.png";
@@ -124,6 +123,4 @@ const AddPayment = () => {
     );
     
 }
-
-// render(<Payment />, document.getElementById("app"));
 export default AddPayment

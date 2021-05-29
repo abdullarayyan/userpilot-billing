@@ -114,11 +114,11 @@ const FreePlan = ({data}) => {
                             <h1 id={"plan_usage"}>Plan Usage
                             </h1>
                             {data.organization.plan_details.applications.map(val => (
-                                <div className={"card3"} key={val}>
+                                <div className={"card3"}  id={"card-plan"} key={val}>
                                     <h4 className={"h4"}>{val.application_name}</h4>
                                     <div>
                                         <div className={"table"}>
-                                            <table id="customers">
+                                            <table id="customers-1">
                                                 <tr>
                                                     <th></th>
                                                     <th></th>

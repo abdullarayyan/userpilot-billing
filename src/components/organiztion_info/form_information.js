@@ -12,6 +12,7 @@ import FreePlan from "../plan_detailes/FreePlan";
 import StanderdPlan from "../plan_detailes/StanderdPlan";
 import InterprisePlan from "../plan_detailes/InterprisePlan";
 import * as Yup from 'yup';
+import Invoice from "../sub_component/Invoice";
 
 const SignupForm = ({data, selectEmail}) => {
     
@@ -208,61 +209,10 @@ const SignupForm = ({data, selectEmail}) => {
                         <p>Invoices</p>
                     
                     </div>
-                    <div className={"wrapper-content"}>
-                        <div className={"box_invoice"}>
-                            <div className={"block_invoice"}>
-                                <table id={"table"}>
-                                    <tr>
-                                        <th id={"th-invoice"}>Date & TIME</th>
-                                        <th>PLAN</th>
-                                        <th>AMOUNT</th>
-                                        <th>DETAILS</th>
-                                    </tr>
-                                </table>
-                            
-                            </div>
-                            
-                            {data.organization.invoices.map(value => (
-                                <div key={value}>
-                                    <div className={"box_invoice2"}>
-                                        <table id={"table"}>
-                                            <tr>
-                                                <th>{value.date_time}</th>
-                                                
-                                                <th>{value.plan}</th>
-                                                <th>{value.amount}</th>
-                                                <th>{value.invoice_number}</th>
-                                            </tr>
-                                            <div className={"data_table"}>
-                                            
-                                            </div>
-                                        </table>
-                                        
-                                        <div>
-                                            {/*<button id={"add_payment"}>Add Payment Method</button>*/}
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                            <div className={"box_invoice2"}>
-                                <table id={"table"}>
-                                    <tr>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th className={"end"}>View | Download</th>
-                                    </tr>
-                                    <div className={"data_table"}>
-                                    
-                                    </div>
-                                </table>
-                                
-                                <div>
-                                    {/*<button id={"add_payment"}>Add Payment Method</button>*/}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
+                    <Invoice data={data}/>
+                    
                 </div>
             </div>
         </main>

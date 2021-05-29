@@ -1,14 +1,12 @@
 import "./Navbar.css";
-import avatar from "../../assets/download.png";
 
-const Navbar = ({sidebarOpen, openSidebar}) => {
+const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="title_page">
                 <h1>settings</h1>
             </div>
-            {/*<div className="nav_icon" onClick={() => openSidebar()}>*/}
-            {/*</div>*/}
+           
             <div className="navbar__left">
                 <a href="#">General</a>
                 <a href="#">User</a>

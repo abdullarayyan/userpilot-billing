@@ -120,7 +120,10 @@ button{
     cursor:pointer;
 }
 
-
+#card-plan{
+    width: 60%;
+    margin-bottom: 10px;
+}
 .wrapper-content{
     /*padding: 12px 20px;*/
     /*margin: 8px 0;*/
@@ -137,7 +140,7 @@ button{
 }
 
 .plan{
-width: 55%;
+    width: 52%;
     padding: 30px 10px;
     margin: 8px 0;
     border: 1px solid #e5e8eb;
@@ -150,7 +153,7 @@ width: 55%;
 
 }
 .box{
-    width: 40%;
+    width: 45%;
     padding: 30px 10px;
     margin: 8px 0;
     border: 1px solid #e5e8eb;
@@ -292,7 +295,14 @@ img#img{
     width: 72%;
 }
 
-#customers td, #customers th {
+#customers-1 {
+    border-collapse: collapse;
+    margin-top: 10px;
+
+    width: 100%;
+}
+
+#customers td, #customers th,#customers-1 td, #customers-1 th {
     padding: 8px;
 }
 tr{

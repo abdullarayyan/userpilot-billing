@@ -16,7 +16,8 @@
 /*    margin-bottom: 10px;*/
 /*}*/
 .nav_icon {
-    display: none;
+    display: flex;
+    color: red;
 }
 
 .nav_icon > i {

@@ -4,16 +4,8 @@ import Sidebar from "./components/sidebar/Sidebar";
 import SignupForm from "./components/organiztion_info/form_information";
 import axios from "axios";
 import Footer from "./components/footer/footer";
-
+import Main from "./components/main/Main";
 const App = () => {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
-    
-    const openSidebar = () => {
-        setSidebarOpen(true)
-    }
-    const closeSidebar = () => {
-        setSidebarOpen(false)
-    }
     
     const [api, setApi] = useState([]);
     const [isLoading, setLoading] = useState(true);
@@ -34,49 +26,16 @@ const App = () => {
     
     return (
         <main>
-        <div className="container">
-            <Navbar sidebarOpen={sidebarOpen} openSidebar={openSidebar}/>
-            <SignupForm data={api}/>
-        
-            <Sidebar siebarOpen={sidebarOpen} closeSidebar={closeSidebar}/>
-            <Footer data={api}/>
+            <div className="container">
+                <Navbar/>
+                <SignupForm data={api}/>
+                {/*                <Main data={api}/>*/}
+                <Sidebar/>
+                <Footer data={api}/>
 
-        </div>
+            </div>
         </main>
     );
 }
 
 export default App;
-
-//   {data.organization.plan_details.applications.map(val => (
-//                                                         <li key={val}></li>
-//                                                     ))}
-
-// {data.organization.plan_details.applications.map(val => (
-//     <div className={} key={val}>
-//
-//     </div>
-// ))}
-
-// {data.organization.plan_details.applications.map(val => (
-//     <div key={val}>
-//
-//         <div className={"table"}>
-//             <table id="customers">
-//                 <tr>
-//                     <th></th>
-//                     <th></th>
-//                 </tr>
-//                 <tr>
-//                     <td>Monthly Active Users Allowed
-//                     </td>
-//                     <td>2500</td>
-//                 </tr>
-//                 <tr>
-//                     <td>Monthly Cost</td>
-//                     <td>dd</td>
-//                 </tr>
-//             </table>
-//         </div>
-//     </div>
-// ))}

@@ -1,0 +1,58 @@
+.box_invoice{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #c6cacd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+    font-weight: bold;
+    color: #585d5d;
+    font-size: 19px;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-top: none;
+
+}
+.block_invoice{
+    height: 45px;
+    display: grid;
+    grid-template-columns: 25% 30% 26% auto ;
+    padding-left: 60px;
+    align-items: center;
+    background-color: #f3f5fa;
+    margin-bottom: 40px;
+
+
+
+
+
+}
+.field{
+    font-size: 13px;
+    color:rgb(187, 185, 185);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 550;
+
+}
+
+.data{
+    height: 65px;
+    background-color: white;
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: 25% 30% 26% auto ;
+}
+
+.data-invoices, .view{
+    font-family: 'Open Sans', sans-serif;
+    color: #4d4d4d;
+    font-size: 15px;
+}
+.data-date, .view{
+    font-weight: 550;
+}
+.view{
+    color:#ff4757;
+}
