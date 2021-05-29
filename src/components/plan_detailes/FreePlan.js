@@ -1,11 +1,11 @@
+import React from 'react';
 import "../Main/Main.css"
-import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "../Main/mainstyle.css"
 import Charts from "../chart/Chart";
 import icon from "../../assets/free_palnIcon.png"
 import img from "../../assets/paymentIcon.png";
-import AddPlan from "../change_plan/payment_method_plan";
+import AddPlan from "../change_plan/PlanPaymentMethod";
 
 
 const FreePlan = ({data}) => {
@@ -16,6 +16,7 @@ const FreePlan = ({data}) => {
         },
         0);
     const formula = mau / data.organization.plan_details.mua;
+    
     
     return (
         <div>

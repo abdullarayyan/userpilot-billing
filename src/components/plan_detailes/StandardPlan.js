@@ -1,14 +1,14 @@
+import React from 'react';
 import "../Main/Main.css"
-import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "../Main/mainstyle.css"
 import Charts from "../chart/Chart";
 import img from "../../assets/paymentIcon.png";
-import flight_icom from "../../assets/flight_icon.png";
-import AddPlan from "../change_plan/payment_method_plan";
+import flight_icon from "../../assets/flight_icon.png";
+import AddPlan from "../change_plan/PlanPaymentMethod";
 
 
-const StanderdPlan = ({data}) => {
+const StandardPlan = ({data}) => {
     
     const mau = data.organization.plan_details.applications.reduce(
         (sum, pointer) => {
@@ -26,7 +26,7 @@ const StanderdPlan = ({data}) => {
                 <div className={"plan"}>
                     <div className={"parent_block"}>
                         <div className={"ico_flight"}>
-                            <img src={flight_icom} alt="logo"/>
+                            <img src={flight_icon} alt="logo"/>
                         </div>
                         <div className={"block"}>
                             <div className={"type"}>
@@ -114,4 +114,4 @@ const StanderdPlan = ({data}) => {
     )
 }
 
-export default StanderdPlan
+export default StandardPlan

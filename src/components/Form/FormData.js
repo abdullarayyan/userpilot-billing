@@ -2,7 +2,6 @@ import Select_option from "../sub_component/select";
 import React from "react";
 import {useFormik} from "formik";
 import * as Yup from "yup";
-import {useEffect, useState} from 'react';
 
 
 const FormData = ({data}) => {

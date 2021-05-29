@@ -1,4 +1,4 @@
-import React, {Component, useState} from "react";
+import React, {useState} from "react";
 import SlidingPane from "react-sliding-pane"
 import "./../payment_method/payment_method.css"
 import img from "../../assets/paymentIcon.png";

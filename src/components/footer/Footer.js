@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css"
-import Cancellation from "./cancel_subsicribtion";
+import Cancellation from "./CancelSubsicribtion";
 
 const Footer = ({data}) => {
     return (

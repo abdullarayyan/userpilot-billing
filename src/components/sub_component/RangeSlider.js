@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import Slider from 'react-rangeslider'
 import "./rangrSlider.css"
 import "../change_plan/free_plan.css"
-import AddP from "../change_plan/payment_method_plan";
 
 class Horizontal extends Component {
     constructor(props) {

@@ -1,12 +1,11 @@
+import React from 'react';
 import "../Main/Main.css"
-import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "../Main/mainstyle.css"
 import Charts from "../chart/Chart";
-import icon from "../../assets/free_palnIcon.png"
 import img from "../../assets/paymentIcon.png";
-import interprise_icen from "../../assets/enterprise_icon.png";
-import AddPlan from "../change_plan/payment_method_plan";
+import enterprise_icon from "../../assets/enterprise_icon.png";
+import AddPlan from "../change_plan/PlanPaymentMethod";
 
 
 const EnterprisePlan = ({data}) => {
@@ -27,7 +26,7 @@ const EnterprisePlan = ({data}) => {
                 <div className={"plan"}>
                     <div className={"parent_block"}>
                         <div className={"ico_flight"}>
-                            <img src={interprise_icen} alt="logo"/>
+                            <img src={enterprise_icon} alt="logo"/>
                         </div>
                         <div className={"block"}>
                             <div className={"type"}>

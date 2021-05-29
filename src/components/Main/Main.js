@@ -1,5 +1,5 @@
+import React from 'react';
 import "./Main.css"
-import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
 import "./mainstyle.css"
 import img from "../../assets/paymentIcon.png";
@@ -7,7 +7,7 @@ import visa from "../../assets/visa.png"
 import AddPayment from "../payment_method/AddPaymentMethode";
 import UpdatePayment from "../payment_method/UpdatePaymentMethode";
 import FreePlan from "../plan_detailes/FreePlan";
-import StanderdPlan from "../plan_detailes/StanderdPlan";
+import StandardPlan from "../plan_detailes/StandardPlan";
 import EnterprisePlan from "../plan_detailes/EnterprisePlan";
 import Invoice from "../sub_component/Invoice";
 import FormData from "../Form/FormData";
@@ -32,7 +32,7 @@ const Main = ({data}) => {
                     
                     {data.organization.plan_details.plan_type === "standard" && (
                         <React.Fragment>
-                            <StanderdPlan data={data}/>
+                            <StandardPlan data={data}/>
                         </React.Fragment>
                     )}
                     

@@ -1,4 +1,4 @@
-import React, {Component, useState} from 'react'
+import React, {useState} from 'react'
 import SlidingPane from "react-sliding-pane"
 import "../../components/payment_method/payment_method.css"
 import img from "../../assets/paymentIcon.png";
@@ -8,7 +8,7 @@ import close from "../../assets/clos.png"
 import enterprise from "../../assets/enterprise_icon.png"
 import "./free_plan.css"
 import Horizontal from "../sub_component/RangeSlider";
-import Downgrade_plan from "./downgrade_plan";
+import Downgrade_plan from "./DowngradePlan";
 
 
 const AddPlan = ({data}) => {
@@ -40,7 +40,6 @@ const AddPlan = ({data}) => {
                 </div>}
                 isOpen={state.isPaneOpenLeft}
                 // title="Add Payment Method"
-                
                 from="left"
                 width="100%"
                 onRequestClose={() => setState({isPaneOpenLeft: false})}
