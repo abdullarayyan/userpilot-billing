@@ -1,7 +1,7 @@
 import React from 'react';
-import "../Main/Main.css"
+import "../main/Main.css"
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import "../Main/mainstyle.css"
+import "../main/mainstyle.css"
 import Charts from "../chart/Chart";
 import img from "../../assets/paymentIcon.png";
 import flight_icon from "../../assets/flight_icon.png";

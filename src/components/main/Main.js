@@ -10,7 +10,7 @@ import FreePlan from "../plan_detailes/FreePlan";
 import StandardPlan from "../plan_detailes/StandardPlan";
 import EnterprisePlan from "../plan_detailes/EnterprisePlan";
 import Invoice from "../sub_component/Invoice";
-import FormData from "../Form/FormData";
+import FormData from "../form/FormData";
 
 const Main = ({data}) => {
     
