@@ -52,6 +52,7 @@
 .slide-pane_from_bottom.content-before-close {
     transform: translateY(100%);
 }
+
 .slide-pane__title-wrapper {
 
     display: flex;
@@ -66,6 +67,7 @@
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
 .slide-pane__overlay {
     position: fixed;
     top: 0px;
@@ -94,7 +96,6 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     align-items: flex-end;
 }
-
 
 
 .slide-pane .slide-pane__title {
@@ -307,58 +308,60 @@
 
 }
 
-#text_green{
+#text_green {
     font-size: 18px;
     color: #1ec780;
 }
 
-#txt1,#txt,#text_green{
+#txt1, #txt, #text_green {
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-#txt{
+#txt {
     color: #4a4f58;
 
 }
 
-#txt1{
+#txt1 {
     color: #adb4bf;
     font-size: 15px;
     margin-top: 15px;
     margin-bottom: 4px;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: flex-end;
 }
 
-#btn-1{
+#btn-1 {
     border: 1px solid #adb4bf;
     background-color: #f9f9f9;
     margin-right: 10px;
 }
-#btn-2{
+
+#btn-2 {
     width: 140px;
     color: #ffffff;
-    background-color: #ff0075 ;
+    background-color: #ff0075;
 }
 
-#btn-3{
+#btn-3 {
     margin-top: 50px;
     border: 1px solid #adb4bf;
     background-color: #f9f9f9;
     margin-right: 10px;
 }
-#btn-4{
+
+#btn-4 {
     margin-top: 50px;
     width: 140px;
     color: #ffffff;
-    background-color: #ff0075 ;
+    background-color: #ff0075;
 }
 
-.content_e{
+.content_e {
     background-color: #f9f9f9;
     position: relative;
     overflow-y: auto;

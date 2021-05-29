@@ -6,7 +6,6 @@ const Navbar = () => {
             <div className="title_page">
                 <h1>settings</h1>
             </div>
-           
             <div className="navbar__left">
                 <a href="#">General</a>
                 <a href="#">User</a>
@@ -14,10 +13,7 @@ const Navbar = () => {
                 <a href="#">Localization</a>
                 <a href="#">Exclude List</a>
                 <a className="active_link" href="#">Usage & Billing</a>
-                {/*<a href="#"><img width="100" src={avatar} alt="avatar"/>*/}
-                {/*</a>*/}
             </div>
-
         </nav>
     )
 }

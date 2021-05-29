@@ -1,7 +1,7 @@
 import React, {Component, useState} from "react";
 import SlidingPane from "react-sliding-pane"
 import "./payment_method.css"
-import img from "../../assets/Untitled1111.png";
+import img from "../../assets/paymentIcon.png";
 import visa from "../../assets/visa.png";
 import hint from "../../assets/hint.png"
 import close from "../../assets/clos.png";
@@ -22,7 +22,7 @@ const AddPayment = () => {
                 closeIcon={<div><img id={"img"} src={close} alt="logo"/>
                 </div>}
                 isOpen={state.isPaneOpenLeft}
-                 title="Add Payment Method"
+                title="Add Payment Method"
                 from="right"
                 width="500px"
                 onRequestClose={() => setState({isPaneOpenLeft: false})}
@@ -72,7 +72,6 @@ const AddPayment = () => {
                                 placeholder={"YY"}
                             />
                         </div>
-                        
                         <div className={"content_info"}>
                             <label>CVV/CVC</label>
                             <div className={"img"}>
@@ -108,7 +107,6 @@ const AddPayment = () => {
                         <p id={"txt"}>$200.00/month</p>
                     </div>
                 </div>
-                
                 <div className={"content_d"}>
                     <div className={"btn"}>
                         
@@ -117,7 +115,6 @@ const AddPayment = () => {
                         <button id={"btn-2"} type={"submit"}>Update & Pay</button>
                     </div>
                 </div>
-            
             </SlidingPane>
         </div>
     );

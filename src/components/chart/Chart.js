@@ -1,6 +1,5 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import ReactDOM from "react-dom";
 
 export default class charts extends React.Component {
     constructor(props) {
@@ -44,7 +43,7 @@ export default class charts extends React.Component {
                         inverseColors: false,
                         opacityFrom: [1],
                         opacityTo: [1],
-                        stops: [0, 50 ]
+                        stops: [0, 50]
                     }
                 },
                 stroke: {

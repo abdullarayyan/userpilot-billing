@@ -11,7 +11,7 @@
 
 @media only screen and (max-width: 978px) {
     #sidebar {
-        display:none;
+        display: none;
     }
 
     .sidebar__title > i {

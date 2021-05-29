@@ -15,14 +15,15 @@ export default class Chart extends React.Component {
         };
     }
     
-    componentDidMount() {}
+    componentDidMount() {
+    }
     
     render() {
         return (
-            <Charts parcentage={per} />
+            <Charts parcentage={mau}/>
         );
     }
 }
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Chart />, rootElement);
+ReactDOM.render(<Chart/>, rootElement);

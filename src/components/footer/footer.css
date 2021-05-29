@@ -1,5 +1,5 @@
-footer{
-background-color: #ffffff;
+footer {
+    background-color: #ffffff;
     width: 100%;
     grid-area: footer;
     display: grid;
@@ -12,14 +12,14 @@ background-color: #ffffff;
 }
 
 
-.footer_content{
+.footer_content {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-footer a{
+footer a {
     font-size: 19px;
     font-style: unset;
     font-palette: dark;
@@ -31,10 +31,12 @@ footer a{
     cursor: pointer;
     /*background-color: #ffffff;*/
 }
-#link{
+
+#link {
 
 }
-footer p{
+
+footer p {
     color: #adb4bf;
     margin-left: 30px;
     font-weight: 600;
@@ -43,11 +45,12 @@ footer p{
 }
 
 
-#cared3{
+#cared3 {
     background-color: white;
 
 }
-#card_3{
+
+#card_3 {
     /*margin: 10px 10px 10px 10px;*/
     /*margin-top: 10px;*/
     background-color: #f2f7fa;
@@ -56,48 +59,54 @@ footer p{
 
 }
 
-#card_4{
+#card_4 {
     /*margin: 10px 10px 10px 10px;*/
     /*margin-top: 10px;*/
-    background-color:#f8f5ff;
+    background-color: #f8f5ff;
     border-left: 10px solid #5f00c2;
     border-radius: 10px;
 
 }
-#p-11{
+
+#p-11 {
     margin-left: 0px;
     margin-top: 5px;
     color: #4a4f58;
 }
-.content_card{
+
+.content_card {
     margin-top: 10px;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
 }
-.content_card1{
+
+.content_card1 {
     margin-top: 10px;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
     /*margin-bottom: 30px;*/
 }
-.content_card_t{
+
+.content_card_t {
     display: flex;
     flex-direction: column;
 }
-#pc,#hc,#bc{
+
+#pc, #hc, #bc {
     margin-left: 30px;
 
 }
-#hc{
+
+#hc {
     margin-top: 20px;
     font-size: 15px;
     font-weight: bold;
     color: #4a4f58;
 }
 
-#pc{
+#pc {
     font-size: 15px;
     font-weight: 500;
     color: #000000;
@@ -105,14 +114,15 @@ footer p{
     margin-bottom: 10px;
 }
 
-#bc{
+#bc {
     margin-bottom: 10px;
     color: #ffffff;
     background-color: #24709c;
     height: 30px;
 
 }
-#bc1{
+
+#bc1 {
     background-color: #00d97b;
     margin-bottom: 10px;
     color: #ffffff;
@@ -120,21 +130,24 @@ footer p{
     margin-left: 30px;
 
 }
-.btn{
+
+.btn {
 
 }
-#btn--1{
+
+#btn--1 {
     border: 2px solid #adb4bf;
     background-color: #f9f9f9;
     margin-right: 10px;
 }
-#btn--2{
+
+#btn--2 {
     background-color: #fb0404;
     width: 213px;
     color: white;
 }
 
-.photo{
+.photo {
     margin-top: 30px;
 
 }

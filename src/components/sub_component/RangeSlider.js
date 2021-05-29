@@ -11,8 +11,6 @@ class Horizontal extends Component {
             value: this.props.data.organization.plan_details.mua
         }
     }
-    
-    
     handleChangeStart = () => {
         console.log('Change event started')
     };
@@ -21,7 +19,7 @@ class Horizontal extends Component {
             value: value
         });
         
-        if(typeof this.props.onChange === 'function'){
+        if (typeof this.props.onChange === 'function') {
             this.props.onChange(value);
         }
         
@@ -30,15 +28,12 @@ class Horizontal extends Component {
     handleChangeComplete = () => {
         console.log('Change event completed')
     };
-    // componentDidMount() {}
-    render()
-    {
+    render() {
         const {value} = this.state
         console.log(value + "ll")
         return (
             <div>
                 <div className='slider' style={{width: '980px', backgroundColor: 'ff0075'}}>
-                    
                     <div style={{textAlign: 'center', color: 'ff0075', fontSize: '35px', marginBottom: '30px'}}>
                     </div>
                     <Slider
@@ -56,4 +51,5 @@ class Horizontal extends Component {
     }
     
 }
+
 export default Horizontal

@@ -2,7 +2,7 @@ import React, {Component, useState} from "react";
 import {render} from "react-dom";
 import SlidingPane from "react-sliding-pane"
 import "./payment_method.css"
-import img from "../../assets/Untitled1111.png";
+import img from "../../assets/paymentIcon.png";
 import visa from "../../assets/visa.png";
 import hint from "../../assets/hint.png";
 import close from "../../assets/clos.png";
@@ -19,18 +19,17 @@ const UpdatePayment = () => {
                 Update Method
             </button>
             <SlidingPane
-    
+                
                 
                 isOpen={state.isPaneOpenLeft}
                 title="Update Payment Method"
                 from="right"
                 width="500px"
                 onRequestClose={() => setState({isPaneOpenLeft: false})}
-                closeIcon={<div >
+                closeIcon={<div>
                     <img id={"img"} src={close} alt="logo"/>
                 </div>}
             >
-                
                 <div className={"content_p"}>
                     
                     <div className={"row_1"}>
@@ -52,7 +51,6 @@ const UpdatePayment = () => {
                                 type="name"
                             />
                         </div>
-                    
                     </div>
                     <div className={"content_date"}>
                         <div className={"expire_m"}>
@@ -67,7 +65,6 @@ const UpdatePayment = () => {
                         <div className={"expire_"}>
                             <h1 id={"cc"}>--</h1>
                         </div>
-                        
                         <div className={"expire_y"}>
                             <input
                                 id="year"
@@ -76,8 +73,6 @@ const UpdatePayment = () => {
                                 placeholder={"YY"}
                             />
                         </div>
-                    
-                    
                     </div>
                     <div className={"content_info"}>
                         <label>CVV/CVC</label>
@@ -92,28 +87,10 @@ const UpdatePayment = () => {
                         </div>
                     </div>
                 </div>
-                {/*<div className={"content_c"}>*/}
-                {/*    /!*<div className={"coupon"}>*!/*/}
-                {/*    /!*    <label>Do you have a coupon code?*!/*/}
-                {/*    /!*    </label>*!/*/}
-                {/*    /!*    <input*!/*/}
-                {/*    /!*        id="coupon"*!/*/}
-                {/*    /!*        name="card_holder_number"*!/*/}
-                {/*    /!*        type="number"*!/*/}
-                {/*    /!*        placeholder={"1234"}*!/*/}
-                {/*    /!*    />*!/*/}
-                {/*    /!*    <button id ={"submit"} type={"submit"}>Apply</button>*!/*/}
-                {/*    /!*</div>*!/*/}
-                {/*</div>*/}
                 <div className={"content_d"}>
                     <div className={"coupon"}>
-                        {/*<p id={"text_green"}>Standard Plan</p>*/}
-                        
-                        {/*<p id={"txt1"}>Total Amount</p>*/}
-                        {/*<p id={"txt"}>$200.00/month</p>*/}
                     </div>
                 </div>
-                
                 <div className={"content_d"}>
                     <div className={"btn"}>
                         
@@ -122,13 +99,10 @@ const UpdatePayment = () => {
                         <button id={"btn-4"} type={"submit"}>Update & Pay</button>
                     </div>
                 </div>
-            
-            
             </SlidingPane>
         </div>
     );
     
 }
 
-// render(<Payment />, document.getElementById("app"));
 export default UpdatePayment

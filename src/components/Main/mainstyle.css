@@ -1,4 +1,4 @@
-.form-wrapper{
+.form-wrapper {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -10,25 +10,28 @@
     font-weight: bold;
     color: #585d5d;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: row;
 }
 
-form p{
+form p {
     margin-left: unset;
     font-size: 13px;
     font-weight: 500;
     margin-top: 5px;
 }
-input[type=text], select,input {
+
+input[type=text], select, input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -39,14 +42,15 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-#a.a{
+#a.a {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     box-sizing: border-box;
 }
-.b,input{
+
+.b, input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -57,7 +61,8 @@ input[type=text], select {
     font-weight: bold;
 
 }
-#user_text{
+
+#user_text {
     color: #0f1010;
     font-size: 14px;
     font-weight: bold;
@@ -70,7 +75,8 @@ input[type=text], select {
     width: 283px;
     height: 162px;
 }
-.c,input{
+
+.c, input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -80,7 +86,8 @@ input[type=text], select {
     font-size: 13px;
     font-weight: bold;
 }
-#additional_text{
+
+#additional_text {
     height: 115px;
     width: 100%;
     padding: 12px 20px;
@@ -91,40 +98,42 @@ input[type=text], select {
     font-size: 14px;
     font-weight: bold;
 }
-textarea{
+
+textarea {
     width: 40vm;
     background-color: white;
 }
 
-.submit{
+.submit {
     /* border: 1px solid  black; */
     display: flex;
     justify-content: flex-end;
-    background-color:#f7f7f7;
+    background-color: #f7f7f7;
     height: 4em;
-    padding-right:20px;
-    padding-top:10px ;
+    padding-right: 20px;
+    padding-top: 10px;
     padding-bottom: 6px;
 
 }
 
-button{
+button {
     position: center;
     border: 1px solid rgb(243, 236, 236);
-    background-color:  #dde2e6;
+    background-color: #dde2e6;
     border-radius: 9px;
     height: 45px;
     width: 110px;
     color: #6a6a6b;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-#card-plan{
+#card-plan {
     width: 60%;
     margin-bottom: 10px;
 }
-.wrapper-content{
+
+.wrapper-content {
     /*padding: 12px 20px;*/
     /*margin: 8px 0;*/
     /*border: 1px solid #b6bcc6;*/
@@ -139,7 +148,7 @@ button{
     justify-content: space-between;
 }
 
-.plan{
+.plan {
     width: 52%;
     padding: 30px 10px;
     margin: 8px 0;
@@ -152,7 +161,8 @@ button{
     color: #585d5d;
 
 }
-.box{
+
+.box {
     width: 45%;
     padding: 30px 10px;
     margin: 8px 0;
@@ -165,7 +175,7 @@ button{
     color: #585d5d;
 }
 
-.box,h1#plan{
+.box, h1#plan {
     font-size: 19px;
     justify-content: center;
     display: flex;
@@ -173,13 +183,15 @@ button{
     position: relative;
     flex-direction: column;
 }
-#chart{
+
+#chart {
     font-size: 19px;
     font-weight: bold;
 
     /*background: black;*/
 }
-g,text{
+
+g, text {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
@@ -187,37 +199,43 @@ g,text{
     color: #acb5bd;
 
 }
-#pp{
+
+#pp {
     color: #4a4f58;
     font-weight: 500;
     font-size: 15px;
     margin-top: 10px;
 }
+
 /*text{*/
 /*    color: crimson;*/
 /*    margin-bottom: 30px;*/
 /*}*/
-#h1{
+#h1 {
     font-size: 14px;
 }
-#span-red{
+
+#span-red {
     color: crimson;
     font-size: 19px;
 }
-#span-black{
+
+#span-black {
     color: #272829;
     font-size: 20px;
 }
-#text{
+
+#text {
     font-size: 10px;
 }
-#h{
+
+#h {
     font-size: 19px;
     color: #acb5bd;
 
 }
 
-g#SvgjsG1087.apexcharts-datalabels-group{
+g#SvgjsG1087.apexcharts-datalabels-group {
     width: 100px;
     height: 400px;
     color: red;
@@ -227,24 +245,27 @@ g#SvgjsG1087.apexcharts-datalabels-group{
     caret-color: black;
 }
 
-#text-red{
+#text-red {
     font-size: 22px;
     color: #fc5681;
 }
-#hh,td{
+
+#hh, td {
     font-size: 14px;
     font-weight: unset;
     font-family: sans-serif;
 }
-.type{
+
+.type {
     display: flex;
 }
-#button{
+
+#button {
     position: center;
     border: 1px solid rgb(243, 236, 236);
     background-color: #1ec780;
     border-radius: 4px;
-     height: 33px;
+    height: 33px;
     width: 110px;
     color: #f9fdfb;
 
@@ -253,42 +274,48 @@ g#SvgjsG1087.apexcharts-datalabels-group{
     margin-left: 11px;
 
 }
-p{
+
+p {
     color: #ff0033;
 
 }
-.type,p{
+
+.type, p {
     margin-left: 20px;
 }
-.block{
+
+.block {
     display: flex;
     flex-direction: column;
 }
-.parent_block{
+
+.parent_block {
     display: flex;
     flex-direction: row;
 
 }
-.ico,table{
+
+.ico, table {
     margin-top: 15px;
 }
-.all{
+
+.all {
     display: flex;
     flex-direction: row;
 }
-.all,img{
+
+.all, img {
     height: auto;
 }
-img#img{
+
+img#img {
     width: 40px;
 }
-/*.table{*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*}*/
-#customers{
+
+#customers {
     margin-top: 10px;
 }
+
 #customers {
     border-collapse: collapse;
 
@@ -302,19 +329,22 @@ img#img{
     width: 100%;
 }
 
-#customers td, #customers th,#customers-1 td, #customers-1 th {
+#customers td, #customers th, #customers-1 td, #customers-1 th {
     padding: 8px;
 }
-tr{
+
+tr {
     margin: 10px;
 }
-h1#plan_usage{
+
+h1#plan_usage {
     font-size: 19px;
     justify-content: left;
     margin-bottom: 12px;
 
 }
-.card{
+
+.card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
@@ -322,21 +352,24 @@ h1#plan_usage{
     background-color: #f5f5f5;
 
 }
-.Plan_Usage{
+
+.Plan_Usage {
     /*display: flex;*/
 }
-h4.h4,#plan_usage{
+
+h4.h4, #plan_usage {
     color: #575b64;
 }
-td#td1{
+
+td#td1 {
     color: #b7bdc7;
 }
 
-.payment-content{
+.payment-content {
     width: 100%;
 }
 
-.box1{
+.box1 {
     width: 100%;
     padding: 30px 10px;
     margin: 8px 0;
@@ -349,7 +382,7 @@ td#td1{
     color: #585d5d;
 }
 
-.box1,h1#plan{
+.box1, h1#plan {
     font-size: 19px;
     justify-content: center;
 
@@ -361,23 +394,25 @@ td#td1{
     /*flex-direction: column;*/
 }
 
-#style_p{
+#style_p {
     font-size: 14px;
     font-weight: 700;
     color: #b6bcc6;
 }
-.block_payment{
+
+.block_payment {
     display: flex;
     justify-content: space-between
 }
-.status{
+
+.status {
     display: flex;
     flex-direction: row;
     align-items: center
 
 }
 
-#add_payment{
+#add_payment {
     position: center;
     border: 1px solid rgb(243, 236, 236);
     background-color: #1ec780;
@@ -390,6 +425,7 @@ td#td1{
     cursor: pointer;
     margin-left: 11px;
 }
+
 table#table {
     border-collapse: collapse;
     width: 100%;
@@ -399,11 +435,12 @@ td#td {
     width: 100%;
 }
 
-.table_invoice{
+.table_invoice {
     /*display: flex;*/
     /*justify-content: space-between*/
 }
-.end{
+
+.end {
     display: flex;
     justify-content: flex-end;
     margin-right: 64px;
@@ -412,7 +449,7 @@ td#td {
     font-weight: 700;
 }
 
-.box_invoice{
+.box_invoice {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -430,33 +467,38 @@ td#td {
 
     padding-top: 0px;
 }
-.block_invoice{
+
+.block_invoice {
     display: flex;
     height: 51px;
     height: 51px;
     background-color: #f3f5fa;
     font-size: 10px;
 }
-#th_invoice{
+
+#th_invoice {
     height: 30px;
     width: 251px;
 }
-#table_invoice{
+
+#table_invoice {
     font-size: 15px;
 }
 
-.box_invoice2{
+.box_invoice2 {
     font-size: 13px;
 }
-.ico_flihgt{
-margin-top: 1px;
+
+.ico_flihgt {
+    margin-top: 1px;
 }
-#text-green{
+
+#text-green {
     font-size: 22px;
     color: #1ec780;
 }
 
-#text-blue{
+#text-blue {
     font-size: 22px;
     color: #5f00c2;
 }

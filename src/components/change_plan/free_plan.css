@@ -1,7 +1,6 @@
 .wrapper__content {
     display: flex;
     flex-direction: column;
-
 }
 
 .sub__title {
@@ -14,9 +13,6 @@
     font-size: 10px;
 }
 
-/** {*/
-/*    box-sizing: border-box;*/
-/*}*/
 :root {
     --switches-bg-color: white;
     --switches-label-color: #adb4bf;
@@ -24,15 +20,6 @@
     --switch-text-color: white;
 }
 
-
-/* a container - decorative, not required */
-
-/* p - decorative, not required */
-
-
-/* container for all of the switch elements
-    - adjust "width" to fit the content accordingly
-*/
 .switches-container {
     width: 16rem;
     position: relative;
@@ -42,18 +29,14 @@
     line-height: 3rem;
     border-radius: 4px;
     border: 2px solid #adb4bf;
-
-
 }
 
-/* input (radio) for toggling. hidden - use labels for clicking on */
 .switches-container input {
     visibility: hidden;
     position: absolute;
     top: 0;
 }
 
-/* labels for the input (radio) boxes - something to click on */
 .switches-container label {
     width: 50%;
     padding: 0;
@@ -63,9 +46,6 @@
     color: var(--switches-label-color);
 }
 
-/* switch highlighters wrapper (sliding left / right)
-    - need wrapper to enable the even margins around the highlight box
-*/
 .switch-wrapper {
     position: absolute;
     top: 0;
@@ -74,23 +54,17 @@
     /*padding: 0.15rem;*/
     z-index: 3;
     transition: transform .5s cubic-bezier(.77, 0, .175, 1);
-    /* transition: transform 1s; */
 }
 
-/* switch box highlighter */
 .switch {
     background: var(--switch-bg-color);
     height: 100%;
-    /*margin-right: 8px;*/
     width: 100%;
     border-radius: 1px;
 
 }
 
-/* switch box labels
-    - default setup
-    - toggle afterwards based on radio:checked status
-*/
+
 .switch div {
     width: 100%;
     text-align: center;
@@ -104,17 +78,14 @@
     left: 0;
 }
 
-/* slide the switch box from right to left */
 .switches-container input:nth-of-type(1):checked ~ .switch-wrapper {
     transform: translateX(0%);
 }
 
-/* slide the switch box from left to right */
 .switches-container input:nth-of-type(2):checked ~ .switch-wrapper {
     transform: translateX(100%);
 }
 
-/* toggle the switch box labels - first checkbox:checked - show first switch div */
 .switches-container input:nth-of-type(1):checked ~ .switch-wrapper .switch div:nth-of-type(1) {
     opacity: 1;
 }
@@ -346,17 +317,6 @@
 
     border-radius: 10px;
 }
-
-
-/*#btn__a{*/
-/*    margin-top: 25px;*/
-/*    width: 167px;*/
-/*    color: #ff0000;*/
-/*    background-color: #f3d5d0;*/
-
-/*    border-radius: 10px;*/
-/*}*/
-
 
 .card__a:hover {
     border: 2px solid #00d97b;

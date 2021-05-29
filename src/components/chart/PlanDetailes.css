@@ -1,19 +1,10 @@
-.wrapper-content{
-    /*padding: 12px 20px;*/
-    /*margin: 8px 0;*/
-    /*border: 1px solid #b6bcc6;*/
-    /*border-radius: 4px;*/
-    /*box-sizing: border-box;*/
-    /*background-color: #ffffff;*/
-    /*font-size: 13px;*/
-    /*font-weight: bold;*/
-    /*color: #585d5d;*/
+.wrapper-content {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
 }
 
-.plan{
+.plan {
     width: 55%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -26,7 +17,8 @@
     color: #585d5d;
 
 }
-.box{
+
+.box {
     width: 40%;
     position: relative;
     padding: 12px 20px;
@@ -41,7 +33,7 @@
     align-items: center;
 }
 
-p#plan{
+p#plan {
     position: center;
     font-size: 19px;
     justify-content: center;
@@ -51,7 +43,7 @@ p#plan{
     flex-wrap: wrap;
 }
 
-.box,h1#plan{
+.box, h1#plan {
     position: center;
     font-size: 19px;
     justify-content: center;

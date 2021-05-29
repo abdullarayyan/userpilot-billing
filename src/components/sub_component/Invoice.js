@@ -1,7 +1,7 @@
 import React from "react";
 import "./Invoice.css";
 
-const Invoice = ({ data }) => {
+const Invoice = ({data}) => {
     return (
         <div className="box_invoice">
             <div className="block_invoice">

@@ -1,9 +1,9 @@
 import React, {Component, useState} from "react";
 import SlidingPane from "react-sliding-pane"
 import "./../payment_method/payment_method.css"
-import img from "../../assets/Untitled1111.png";
+import img from "../../assets/paymentIcon.png";
 import close from "../../assets/clos.png";
-import enterprise from "../../assets/interprise_icon.png"
+import enterprise from "../../assets/enterprise_icon.png"
 import "../../components/change_plan/free_plan.css"
 import "../../components/change_plan/downdrade.css"
 import "./footer.css"
@@ -59,10 +59,10 @@ const Cancellation = ({data}) => {
                         </dive>
                     </div>
                 </div>
-    
+                
                 <div className={"card3"} id={"cared3"}>
                     <div className={"coupon"} id={"card_4"}>
-            
+                        
                         <dive className={"content_card"}>
                             <div className={"photo"}>
                                 <img id={"img"} src={enterprise} alt="logo"/>
@@ -76,8 +76,8 @@ const Cancellation = ({data}) => {
                                 </div>
                             </div>
                         </dive>
-        
-        
+                    
+                    
                     </div>
                 </div>
                 <div className={"content_d"}>

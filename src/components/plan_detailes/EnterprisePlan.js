@@ -1,16 +1,22 @@
-import "../main/Main.css"
+import "../Main/Main.css"
 import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import "../organiztion_info/form_information.css"
+import "../Main/mainstyle.css"
 import Charts from "../chart/Chart";
-import icon from "../../assets/Untitle111d.png"
-import img from "../../assets/Untitled1111.png";
-import interprise_icen from "../../assets/interprise_icon.png";
+import icon from "../../assets/free_palnIcon.png"
+import img from "../../assets/paymentIcon.png";
+import interprise_icen from "../../assets/enterprise_icon.png";
+import AddPlan from "../change_plan/payment_method_plan";
 
 
-const InterprisePlan = ({data}) => {
-    const free = React.useMemo(() => true, []);
-    const pre = (data.organization.plan_details.applications[0].production_usage) / 2000
+const EnterprisePlan = ({data}) => {
+    
+    const mau = data.organization.plan_details.applications.reduce(
+        (sum, pointer) => {
+            return sum + pointer.production_usage + pointer.staging_usage;
+        },
+        0);
+    const formula = mau / data.organization.plan_details.mua;
     return (
         <div>
             <div className="main__greeting">
@@ -25,9 +31,10 @@ const InterprisePlan = ({data}) => {
                         </div>
                         <div className={"block"}>
                             <div className={"type"}>
-                                <h1 id={"hh"}><span>You are on the</span> <span id={"text-blue"}>Standard Plan</span>
+                                <h1 id={"hh"}><span>You are on the</span> <span id={"text-blue"}>Enterprise Plan</span>
                                 </h1>
-                                <button id={"button"}>Change Plan</button>
+                                <AddPlan data={data}/>
+                                {/*<button id={"button"}>Change Plan</button>*/}
                             </div>
                             <div className={"p"}>
                             </div>
@@ -58,11 +65,11 @@ const InterprisePlan = ({data}) => {
                             <h1 id={"plan_usage"}>Plan Usage
                             </h1>
                             {data.organization.plan_details.applications.map(val => (
-                                <div className={"card3"} key={val}>
+                                <div className={"card3"} id={"card-plan"} key={val}>
                                     <h4 className={"h4"}>{val.application_name}</h4>
                                     <div>
                                         <div className={"table"}>
-                                            <table id="customers">
+                                            <table id="customers-1">
                                                 <tr>
                                                     <th></th>
                                                     <th></th>
@@ -90,12 +97,12 @@ const InterprisePlan = ({data}) => {
                 <div className={"box"}>
                     <h1 id={"plan"}>Plan Total Usage</h1>
                     <div id={"chart"}>
-                        <Charts/>
+                        <Charts parcentage={formula}/>
                     </div>
                     <h1 id={"h"}>Total Used</h1>
                     <br/>
                     <h5><span
-                        id={"span-red"}> `{data.organization.plan_details.applications.production_usage}` </span> out
+                        id={"span-red"}> {mau} </span> out
                         of <span id={"span-black"}>2500 MAU</span></h5>
                     <h6>Resets May 01, 2021 at 3:00 am
                     </h6>
@@ -106,4 +113,4 @@ const InterprisePlan = ({data}) => {
     )
 }
 
-export default InterprisePlan
+export default EnterprisePlan

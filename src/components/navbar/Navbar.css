@@ -1,8 +1,6 @@
-
 .navbar {
     background: #ffffff;
     grid-area: nav;
-    /*height: 120px;*/
     display: grid;
     font-size: 13px;
     align-items: center;
@@ -11,10 +9,7 @@
     border-bottom: 1px solid #f1f0f0;
     height: 140px
 }
-/*.title_page{*/
-/*margin-top: 10px;*/
-/*    margin-bottom: 10px;*/
-/*}*/
+
 .nav_icon {
     display: flex;
     color: red;
@@ -35,10 +30,9 @@
 
 .navbar__left .active_link {
     color: #ff167a;
-    border-bottom: 5px solid #ff167a ;
+    border-bottom: 5px solid #ff167a;
     padding-bottom: 18px;
     border-radius: 4px;
-
 }
 
 .navbar__right {

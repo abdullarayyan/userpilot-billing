@@ -1,7 +1,7 @@
 import React, {Component, useState} from "react";
 import SlidingPane from "react-sliding-pane"
 import "./../payment_method/payment_method.css"
-import img from "../../assets/Untitled1111.png";
+import img from "../../assets/paymentIcon.png";
 import close from "../../assets/clos.png";
 import "./free_plan.css"
 import "./downdrade.css"

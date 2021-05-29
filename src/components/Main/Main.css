@@ -184,8 +184,6 @@ main {
 }
 
 
-
-
 @media only screen and (max-width: 855px) {
     .main__cards {
         grid-template-columns: 1fr;

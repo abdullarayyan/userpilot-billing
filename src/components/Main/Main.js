@@ -1,27 +1,49 @@
 import "./Main.css"
-import SignupForm from "../organiztion_info/form_information";
-import AddPayment from "../payment_method/AddPaymentMethode";
-import React from "react";
-import img from "../../assets/Untitled1111.png";
-import "../main/Main.css"
-import {useFormik} from 'formik';
+import React, {useEffect, useState} from 'react';
 import "react-sliding-pane/dist/react-sliding-pane.css";
-import Select_option from "../sub_component/select";
+import "./mainstyle.css"
+import img from "../../assets/paymentIcon.png";
 import visa from "../../assets/visa.png"
+import AddPayment from "../payment_method/AddPaymentMethode";
 import UpdatePayment from "../payment_method/UpdatePaymentMethode";
 import FreePlan from "../plan_detailes/FreePlan";
 import StanderdPlan from "../plan_detailes/StanderdPlan";
-import InterprisePlan from "../plan_detailes/InterprisePlan";
-import * as Yup from 'yup';
+import EnterprisePlan from "../plan_detailes/EnterprisePlan";
 import Invoice from "../sub_component/Invoice";
+import FormData from "../Form/FormData";
+
 const Main = ({data}) => {
+    
     return (
         <main>
-            <SignupForm data={data}/>
-    
             <div className="main__container">
                 <div className="main__title">
-    
+                    <div className="main__greeting">
+                        <p>organization information</p>
+                        <FormData data={data}/>
+                    </div>
+                    
+                    {data.organization.plan_details.plan_type === "trial" && (
+                        <React.Fragment>
+                            <FreePlan data={data}/>
+                        </React.Fragment>
+                    )}
+                    
+                    
+                    {data.organization.plan_details.plan_type === "standard" && (
+                        <React.Fragment>
+                            <StanderdPlan data={data}/>
+                        </React.Fragment>
+                    )}
+                    
+                    
+                    {data.organization.plan_details.plan_type === "enterprise" && (
+                        <React.Fragment>
+                            <EnterprisePlan data={data}/>
+                        </React.Fragment>
+                    )}
+                    
+                    
                     {data.organization.plan_details.plan_type === "trial" && (
                         <React.Fragment>
                             <div className="main__greeting">
@@ -41,16 +63,16 @@ const Main = ({data}) => {
                                     </div>
                                 </div>
                             </div>
-                        
                         </React.Fragment>
-                    
                     )}
-    
-                    {data.organization.plan_details.plan_type === "trial" && (
+                    
+                    
+                    {data.organization.plan_details.plan_type !== "trial"
+                    && (
                         <div>
                             <div className="main__greeting">
                                 <p>Current Payment Method</p>
-            
+                            
                             </div>
                             <div className={"wrapper-content"}>
                                 <div className={"box1"}>
@@ -69,13 +91,14 @@ const Main = ({data}) => {
                         </div>
                     )}
                     
-                    
+                    <div className="main__greeting">
+                        <p>Invoices</p>
+                    </div>
+                    <Invoice data={data}/>
                 </div>
             </div>
-            
-            
         </main>
-    )
-}
+    );
+};
 
 export default Main

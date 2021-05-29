@@ -1,11 +1,11 @@
 import React, {Component, useState} from 'react'
 import SlidingPane from "react-sliding-pane"
 import "../../components/payment_method/payment_method.css"
-import img from "../../assets/Untitled1111.png";
+import img from "../../assets/paymentIcon.png";
 import flight from "../../assets/flight_icon.png";
 import hint from "../../assets/hint.png"
 import close from "../../assets/clos.png"
-import enterprise from "../../assets/interprise_icon.png"
+import enterprise from "../../assets/enterprise_icon.png"
 import "./free_plan.css"
 import Horizontal from "../sub_component/RangeSlider";
 import Downgrade_plan from "./downgrade_plan";
@@ -338,5 +338,4 @@ const AddPlan = ({data}) => {
     
 }
 
-// render(<Payment />, document.getElementById("app"));
 export default AddPlan

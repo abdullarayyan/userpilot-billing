@@ -9,30 +9,23 @@ import {IoCompassOutline} from "react-icons/io5";
 
 const MainSidebar = (Props) => {
     return (
-            <div className="sidebar-container" id={"sidebar"}>
-                
-                <div className="sidebar">
-                    <a href="#" onClick={Props.onToggle}><RiMenuUnfoldLine/></a>
-                    <a href="#"><HiOutlineUsers/> </a>
-                    <a href="#"><FaSignal/></a>
-                    <a href="#"><FiLayers/></a>
-                    <a href="#"><IoCompassOutline/></a>
-                </div>
-                
-                <div className="setting">
-                    <a href="#"><FiSettings/></a>
-                </div>
-                
-                <div className="name">
-                    <div className="nameIcon">
-                        JR
-                    </div>
-                
-                </div>
-            
-            
+        <div className="sidebar-container" id={"sidebar"}>
+            <div className="sidebar">
+                <a href="#" onClick={Props.onToggle}><RiMenuUnfoldLine/></a>
+                <a href="#"><HiOutlineUsers/> </a>
+                <a href="#"><FaSignal/></a>
+                <a href="#"><FiLayers/></a>
+                <a href="#"><IoCompassOutline/></a>
             </div>
-        
+            <div className="setting">
+                <a href="#"><FiSettings/></a>
+            </div>
+            <div className="name">
+                <div className="nameIcon">JR
+                </div>
+            </div>
+        </div>
+    
     )
 }
 
