@@ -244,13 +244,6 @@
 
 }
 
-.expire_ {
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-}
-
 .expire_m, .expire_y {
     display: flex;
     flex-direction: column;
@@ -367,7 +360,28 @@
     overflow-y: auto;
     padding: 24px 32px;
     flex: 1 1 auto;
+}
 
+#input{
+    cursor: pointer;
+}
+
+.input->input:hover{
+cursor: pointer;
+    border: 1px solid #ff0075;
+}
+
+#textarea{
+    width: 100%;
+    border: 1px solid #a5aaad;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 
 }
 
+#bye{
+    width: 30%;
+    height: 30%;
+    background-color: red;
+}

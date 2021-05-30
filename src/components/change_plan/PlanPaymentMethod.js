@@ -168,7 +168,7 @@ const AddPlan = ({data}) => {
                                         <div className={"element"}>
                                             <img id={"img"} src={flight} alt="logo"/>
                                             <h1 id={"h_1"}>Standard</h1>
-                                            <h1 id={"h_2"}>$399</h1>
+                                            <h1 id={"h_2"}>${price}</h1>
                                             <h1 id={"h_3"}>per month</h1>
                                             <button id={"btn__a"} type={"submit"}>Your Current Plan</button>
                                             <div className={"list"}>
@@ -209,7 +209,7 @@ const AddPlan = ({data}) => {
                                         <div className={"element"}>
                                             <img id={"img"} src={flight} alt="logo"/>
                                             <h1 id={"h_1"}>Standard</h1>
-                                            <h1 id={"h_2"}>$399</h1>
+                                            <h1 id={"h_2"}>${price}</h1>
                                             <h1 id={"h_3"}>per month</h1>
                                             <button id={"btn__a"} type={"submit"}>Buy Now</button>
                                             <div className={"list"}>
@@ -252,7 +252,7 @@ const AddPlan = ({data}) => {
                                         <div className={"element"}>
                                             <img id={"img"} src={flight} alt="logo"/>
                                             <h1 id={"h_1"}>Standard</h1>
-                                            <h1 id={"h_2"}>$399</h1>
+                                            <h1 id={"h_2"}>${price}</h1>
                                             <h1 id={"h_3"}>per month</h1>
                                             {/*<button id={"btn__a_d"} type={"submit"}>Downgrade_plan</button>*/}
                                             <Downgrade_plan/>
@@ -296,7 +296,7 @@ const AddPlan = ({data}) => {
                                         <div className={"element"}>
                                             <img id={"img"} src={flight} alt="logo"/>
                                             <h1 id={"h_1"}>Standard</h1>
-                                            <h1 id={"h_2"}>$399</h1>
+                                            <h1 id={"h_2"}>${price}</h1>
                                             <h1 id={"h_3"}>per month</h1>
                                             <button id={"btn__a"} type={"submit"}>Upgrade</button>
                                             <div className={"list"}>

@@ -7,6 +7,7 @@ import enterprise from "../../assets/enterprise_icon.png"
 import "../../components/change_plan/free_plan.css"
 import "../../components/change_plan/downdrade.css"
 import "./footer.css"
+import ContinueCancellation from "./ContinueCancellation";
 
 const Cancellation = ({data}) => {
     const [state, setState] = useState({
@@ -90,7 +91,8 @@ const Cancellation = ({data}) => {
                         
                         <button id={"btn--1"} type={"submit"}>Close</button>
                         
-                        <button id={"btn--2"} type={"submit"}>Continue to Cancelation</button>
+                        {/*<button id={"btn--2"} type={"submit"}>Continue to Cancellation</button>*/}
+                        <ContinueCancellation/>
                     </div>
                 </div>
             </SlidingPane>

@@ -9,7 +9,6 @@ import AddPlan from "../change_plan/PlanPaymentMethod";
 
 
 const FreePlan = ({data}) => {
-    const free = React.useMemo(() => true, []);
     const mau = data.organization.plan_details.applications.reduce(
         (sum, pointer) => {
             return sum + pointer.production_usage + pointer.staging_usage;
