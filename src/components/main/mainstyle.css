@@ -502,3 +502,9 @@ td#td {
     font-size: 22px;
     color: #5f00c2;
 }
+
+#btn{
+    height: 33px;
+    background-color: #5f00c2;
+    color: white;
+}

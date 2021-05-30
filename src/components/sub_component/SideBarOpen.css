@@ -188,4 +188,11 @@ body.sidebarOpened .sub-sidebar-container {
     font-size: 14px;
 }
 
-
+#p{
+    color: #b5bbc2;
+}
+#p1{
+    color: #b5bbc2;
+    font-size: 11px;
+    font-weight: 500;
+}

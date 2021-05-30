@@ -80,7 +80,7 @@ const FreePlan = ({data}) => {
                                                     <td id={"td1"}>Production</td>
                                                     <td>{val.production_usage}</td>
                                                 </tr>
-                                                {free && (
+                                                {val.staging_usage!==0 && (
                                                     <React.Fragment>
                                                         <tr>
                                                             <td id={"td1"}>Staging</td>
@@ -88,11 +88,11 @@ const FreePlan = ({data}) => {
                                                         </tr>
                                                     </React.Fragment>
                                                 )}
-                                                {!free && (
+                                                {val.staging_usage===0 && (
                                                     <React.Fragment>
                                                         <tr>
                                                             <td id={"td1"}>Staging</td>
-                                                            <td>upgrade</td>
+                                                            <td><button id={"btn"}>Upgrade</button></td>
                                                         </tr>
                                                     </React.Fragment>
                                                 )}

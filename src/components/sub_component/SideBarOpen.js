@@ -100,7 +100,8 @@ const SideBarOpen = (Props) => {
             <div className="sidebar-username">
                 <div className="usernameIcon">JR</div>
                 <div className="usernameEmail">
-                    <p>John Roosevelt<br/>John@gmail.com</p>
+                    <p id={"p"}>John Roosevelt</p>
+                    <p id={"p1"}>John@gmail.com</p>
                 </div>
                 <div className="emailArrowIcon"><IoIosArrowForward/></div>
             </div>
